@@ -8,14 +8,17 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    MediaQueryData mediaQuery = MediaQuery.of(context);
     return Drawer(
       child: Column(
         children: [
           Container(
-            padding: EdgeInsets.symmetric(vertical: 27),
+            //padding: EdgeInsets.symmetric(vertical: 27),
             child: Image.asset('assets/images/logo.png'),
+            height: mediaQuery.size.height * 0.25,
           ),
           Container(
+            height: mediaQuery.size.height * 0.75,
             color: Colors.black,
             child: Column(
               children: const [
