@@ -1,9 +1,9 @@
 //import 'package:devmobilexam/widget/custom_navbar.dart';
-import 'package:devmobilexam/pages/my_list_page.dart';
-import 'package:devmobilexam/pages/replay_page.dart';
-import 'package:devmobilexam/pages/vod_page.dart';
-import 'package:devmobilexam/pages/youtube_page.dart';
-import 'package:devmobilexam/widget/home_page.dart';
+import './pages/my_list_page.dart';
+import './pages/replay_page.dart';
+import './pages/vod_page.dart';
+import './pages/youtube_page.dart';
+import './widget/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
