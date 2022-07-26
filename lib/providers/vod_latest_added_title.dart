@@ -1,17 +1,15 @@
-//import 'package:flutter/material.dart';
-
-class Movie {
+class VodLatestAddedTitle {
   final String id;
   final String title;
   final String cover;
-  final bool latest;
+  final bool latestaddedtitle;
   final bool ismovie;
 
-  Movie({
+  VodLatestAddedTitle({
     required this.id,
     required this.title,
     required this.cover,
     required this.ismovie,
-    required this.latest,
+    required this.latestaddedtitle,
   });
 }

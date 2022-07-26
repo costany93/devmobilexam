@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 class CustomListTileDrawer extends StatelessWidget {
@@ -22,6 +24,7 @@ class CustomListTileDrawer extends StatelessWidget {
         style: const TextStyle(color: Colors.white),
       ),
       trailing: Icon(CustomTrailing),
+      // ignore: avoid_print
       onTap: () => print('clic sur un element'),
     );
   }

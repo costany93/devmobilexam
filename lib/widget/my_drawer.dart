@@ -1,7 +1,7 @@
 import 'package:devmobilexam/widget/custom_list_tile_drawer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+//import 'package:flutter/src/foundation/key.dart';
+//import 'package:flutter/src/widgets/framework.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -12,8 +12,9 @@ class MyDrawer extends StatelessWidget {
     return Drawer(
       child: Column(
         children: [
-          Container(
+          SizedBox(
             //padding: EdgeInsets.symmetric(vertical: 27),
+            // ignore: sort_child_properties_last
             child: Image.asset('assets/images/logo.png'),
             height: mediaQuery.size.height * 0.25,
           ),
@@ -34,7 +35,7 @@ class MyDrawer extends StatelessWidget {
                 ),
                 CustomListTileDrawer(
                   CustomLeading: Icons.refresh,
-                  CustomText: 'Replay Tv',
+                  CustomText: 'Replay TV',
                   CustomTrailing: Icons.arrow_right_rounded,
                 ),
                 CustomListTileDrawer(

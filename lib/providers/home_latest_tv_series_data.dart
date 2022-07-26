@@ -3,39 +3,39 @@
 import 'package:devmobilexam/providers/movie.dart';
 
 // ignore: non_constant_identifier_names
-final MEALS_DATA = [
+final LATESTTVSERIES_DATA = [
   Movie(
-    id: '0',
+    id: '1',
     title: 'La chasse au fleau',
-    cover: 'assets/images/1.jpeg',
+    cover: 'assets/images/latestadded5.jpeg',
     ismovie: false,
     latest: true,
   ),
   Movie(
     id: '1',
     title: 'L\'eau',
-    cover: 'assets/images/2.jpeg',
+    cover: 'assets/images/latestadded1.jpeg',
     ismovie: true,
     latest: true,
   ),
   Movie(
-    id: '2',
+    id: '3',
     title: 'La facade cacher',
-    cover: 'assets/images/3.jpeg',
+    cover: 'assets/images/latestadded4.jpeg',
     ismovie: true,
     latest: false,
   ),
   Movie(
-    id: '3',
+    id: '4',
     title: 'Le tresor',
-    cover: 'assets/images/4.jpeg',
+    cover: 'assets/images/mostpopular2.jpeg',
     ismovie: false,
     latest: false,
   ),
   Movie(
-    id: '4',
+    id: '5',
     title: 'La chasse de vertu',
-    cover: 'assets/images/5.jpeg',
+    cover: 'assets/images/1.jpeg',
     ismovie: false,
     latest: false,
   ),
