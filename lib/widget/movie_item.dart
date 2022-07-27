@@ -2,6 +2,7 @@
 //import 'package:flutter/src/widgets/framework.dart';
 // ignore_for_file: prefer_const_constructors
 
+import 'package:devmobilexam/widget/gaskia_vod_alert_dialog.dart';
 import 'package:flutter/material.dart';
 
 class MovieItem extends StatelessWidget {
@@ -17,13 +18,32 @@ class MovieItem extends StatelessWidget {
     MediaQueryData mediaQuery = MediaQuery.of(context);
     return InkWell(
       // ignore: avoid_print
-      onTap: () => print('cliquer'),
+      onTap: () => showDialog<void>(
+        barrierDismissible: true,
+        context: context,
+        builder: (BuildContext context) {
+          return Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Padding(
+                padding: EdgeInsets.all(0),
+                child: Container(
+                    height: mediaQuery.size.height * 0.25,
+                    width: mediaQuery.size.width,
+                    color: Colors.black,
+                    child: GaskiaVodAlertDialog(
+                        id: id, imageAsset: imageAsset, title: title)),
+              )
+            ],
+          );
+        },
+      ),
       // ignore: avoid_unnecessary_containers
       child: Container(
         child: Column(
           children: [
             Container(
-                width: mediaQuery.size.width * 0.27,
+                width: mediaQuery.size.width * 0.40,
                 height: mediaQuery.size.height * 0.35,
                 margin: const EdgeInsets.only(left: 10),
                 decoration: BoxDecoration(
@@ -32,12 +52,15 @@ class MovieItem extends StatelessWidget {
                     fit: BoxFit.fitHeight,
                   ),
                 )),
-            Row(
-              // mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Text(title),
-                Icon(Icons.more_vert),
-              ],
+            Container(
+              width: mediaQuery.size.width * 0.40,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(title),
+                  Icon(Icons.more_vert),
+                ],
+              ),
             ),
           ],
         ),
