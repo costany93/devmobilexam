@@ -1,5 +1,5 @@
-import 'package:devmobilexam/widget/custom_navbar.dart';
-import 'package:devmobilexam/widget/my_drawer.dart';
+import '../widget/custom_navbar.dart';
+import '../widget/my_drawer.dart';
 import 'package:flutter/material.dart';
 
 class YoutubePage extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:devmobilexam/providers/vod_latest_added_title.dart';
+import '../providers/vod_latest_added_title.dart';
 
 class VodLatestAddedProvider {
   final List<VodLatestAddedTitle> _items = [];

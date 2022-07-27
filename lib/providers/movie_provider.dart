@@ -1,4 +1,4 @@
-import 'package:devmobilexam/providers/movie.dart';
+import '../providers/movie.dart';
 
 class MovieProvider {
   final List<Movie> _items = [];

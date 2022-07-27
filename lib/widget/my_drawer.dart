@@ -1,4 +1,4 @@
-import 'package:devmobilexam/widget/custom_list_tile_drawer.dart';
+import '../widget/custom_list_tile_drawer.dart';
 import 'package:flutter/material.dart';
 //import 'package:flutter/src/foundation/key.dart';
 //import 'package:flutter/src/widgets/framework.dart';

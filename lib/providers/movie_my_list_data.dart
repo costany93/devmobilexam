@@ -1,4 +1,4 @@
-import 'package:devmobilexam/providers/vod_latest_added_title.dart';
+import '../providers/vod_latest_added_title.dart';
 
 // ignore: non_constant_identifier_names
 final MOVIE_MY_LIST_DATA = [

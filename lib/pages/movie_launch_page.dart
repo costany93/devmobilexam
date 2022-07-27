@@ -1,13 +1,13 @@
 // ignore_for_file: unrelated_type_equality_checks
 
-//import 'package:devmobilexam/providers/movie.dart';
-//import 'package:devmobilexam/providers/movie_data.dart';
-//import 'package:devmobilexam/providers/vod_latest_added_data.dart';
-//import 'package:devmobilexam/providers/vod_latest_added_title.dart';
-import 'package:devmobilexam/widget/custom_navbar.dart';
-import 'package:devmobilexam/widget/movie_page_buttons.dart';
-import 'package:devmobilexam/widget/related_movies_widget.dart';
-//import 'package:devmobilexam/widget/movie_item.dart';
+//import '../providers/movie.dart';
+//import '../providers/movie_data.dart';
+//import '../providers/vod_latest_added_data.dart';
+//import '../providers/vod_latest_added_title.dart';
+import '../widget/custom_navbar.dart';
+import '../widget/movie_page_buttons.dart';
+import '../widget/related_movies_widget.dart';
+//import '../widget/movie_item.dart';
 import 'package:flutter/material.dart';
 
 class MovieLaunchPage extends StatelessWidget {

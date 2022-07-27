@@ -1,11 +1,11 @@
-import 'package:devmobilexam/providers/vod_religion_movies_data.dart';
-import 'package:devmobilexam/providers/vod_latest_added_data.dart';
-import 'package:devmobilexam/providers/vod_most_popular_data.dart';
-import 'package:devmobilexam/widget/custom_navbar.dart';
-//import 'package:devmobilexam/widget/item_title.dart';
-import 'package:devmobilexam/widget/my_drawer.dart';
-import 'package:devmobilexam/widget/vod_latest_added_item.dart';
-import 'package:devmobilexam/widget/vod_most_popular_item.dart';
+import '../providers/vod_religion_movies_data.dart';
+import '../providers/vod_latest_added_data.dart';
+import '../providers/vod_most_popular_data.dart';
+import '../widget/custom_navbar.dart';
+//import '../widget/item_title.dart';
+import '../widget/my_drawer.dart';
+import '../widget/vod_latest_added_item.dart';
+import '../widget/vod_most_popular_item.dart';
 import 'package:flutter/material.dart';
 
 class VodPage extends StatelessWidget {

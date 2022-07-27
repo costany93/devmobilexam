@@ -1,6 +1,6 @@
 //import 'package:flutter/material.dart';
 
-import 'package:devmobilexam/providers/movie.dart';
+import '../providers/movie.dart';
 
 // ignore: non_constant_identifier_names
 final LATESTTVSERIES_DATA = [

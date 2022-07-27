@@ -1,4 +1,4 @@
-import 'package:devmobilexam/providers/vod_latest_added_title.dart';
+import '../providers/vod_latest_added_title.dart';
 
 // ignore: non_constant_identifier_names
 final VOD_DATA = [
@@ -11,7 +11,6 @@ final VOD_DATA = [
   ),
   VodLatestAddedTitle(
     id: '1',
-    
     title: 'S02 : E05',
     cover: 'assets/images/latestadded1.jpeg',
     ismovie: true,

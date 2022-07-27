@@ -2,7 +2,7 @@
 //import 'package:flutter/src/widgets/framework.dart';
 // ignore_for_file: prefer_const_constructors
 
-import 'package:devmobilexam/widget/gaskia_vod_alert_dialog.dart';
+import '../widget/gaskia_vod_alert_dialog.dart';
 import 'package:flutter/material.dart';
 
 class MovieItem extends StatelessWidget {

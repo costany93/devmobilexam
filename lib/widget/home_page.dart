@@ -1,13 +1,13 @@
-import 'package:devmobilexam/providers/home_latest_tv_series_data.dart';
-import 'package:devmobilexam/widget/custom_navbar.dart';
-//import 'package:devmobilexam/widget/item_title.dart';
-import 'package:devmobilexam/widget/movie_item.dart';
-import 'package:devmobilexam/widget/my_drawer.dart';
+import '../providers/home_latest_tv_series_data.dart';
+import '../widget/custom_navbar.dart';
+//import '../widget/item_title.dart';
+import '../widget/movie_item.dart';
+import '../widget/my_drawer.dart';
 //import 'package:flutter/src/foundation/key.dart';
 //import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
-import 'package:devmobilexam/providers/movie_data.dart';
+import '../providers/movie_data.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -81,8 +81,6 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
-        )
-        
-        );
+        ));
   }
 }

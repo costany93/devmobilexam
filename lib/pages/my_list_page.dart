@@ -1,8 +1,8 @@
-import 'package:devmobilexam/providers/movie_my_list_data.dart';
-import 'package:devmobilexam/providers/vod_latest_added_data.dart';
-import 'package:devmobilexam/widget/custom_navbar.dart';
-import 'package:devmobilexam/widget/my_drawer.dart';
-import 'package:devmobilexam/widget/my_movie_page_widget.dart';
+import '../providers/movie_my_list_data.dart';
+import '../providers/vod_latest_added_data.dart';
+import '../widget/custom_navbar.dart';
+import '../widget/my_drawer.dart';
+import '../widget/my_movie_page_widget.dart';
 import 'package:flutter/material.dart';
 
 class MyListPage extends StatelessWidget {

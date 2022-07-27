@@ -1,6 +1,6 @@
-import 'package:devmobilexam/pages/replay_page.dart';
-import 'package:devmobilexam/widget/gaskia_vod_alert_dialog.dart';
-import 'package:devmobilexam/widget/replay_alert_dialog.dart';
+import '../pages/replay_page.dart';
+import '../widget/gaskia_vod_alert_dialog.dart';
+import '../widget/replay_alert_dialog.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';

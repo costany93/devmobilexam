@@ -1,9 +1,9 @@
-import 'package:devmobilexam/providers/movie_my_list_data.dart';
-import 'package:devmobilexam/providers/replay_data.dart';
-import 'package:devmobilexam/widget/custom_navbar.dart';
-import 'package:devmobilexam/widget/my_drawer.dart';
-import 'package:devmobilexam/widget/my_movie_page_widget.dart';
-import 'package:devmobilexam/widget/replay_movie_widget.dart';
+import '../providers/movie_my_list_data.dart';
+import '../providers/replay_data.dart';
+import '../widget/custom_navbar.dart';
+import '../widget/my_drawer.dart';
+import '../widget/my_movie_page_widget.dart';
+import '../widget/replay_movie_widget.dart';
 import 'package:flutter/material.dart';
 
 class ReplayPage extends StatelessWidget {

@@ -1,6 +1,6 @@
-import 'package:devmobilexam/widget/custom_navbar.dart';
-import 'package:devmobilexam/widget/episodes.dart';
-import 'package:devmobilexam/widget/movie_page_buttons2.dart';
+import '../widget/custom_navbar.dart';
+import '../widget/episodes.dart';
+import '../widget/movie_page_buttons2.dart';
 import 'package:flutter/material.dart';
 
 class MovieLaunchPage2 extends StatelessWidget {
