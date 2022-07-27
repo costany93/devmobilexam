@@ -1,7 +1,9 @@
 import 'package:devmobilexam/providers/movie_my_list_data.dart';
+import 'package:devmobilexam/providers/replay_data.dart';
 import 'package:devmobilexam/widget/custom_navbar.dart';
 import 'package:devmobilexam/widget/my_drawer.dart';
 import 'package:devmobilexam/widget/my_movie_page_widget.dart';
+import 'package:devmobilexam/widget/replay_movie_widget.dart';
 import 'package:flutter/material.dart';
 
 class ReplayPage extends StatelessWidget {
@@ -45,9 +47,16 @@ class ReplayPage extends StatelessWidget {
             ),
           ),
           Container(
-              height: mediaQuery.size.height * 0.7,
-              width: mediaQuery.size.width,
-              child: Text('Replay')),
+            height: mediaQuery.size.height * 0.7,
+            width: mediaQuery.size.width,
+            child: ListView.builder(
+              itemBuilder: (ctx, index) => ReplayMovieWidget(
+                  id: REPLAY_DATA[index].id,
+                  imageAsset: REPLAY_DATA[index].cover,
+                  title: REPLAY_DATA[index].title),
+              itemCount: REPLAY_DATA.length,
+            ),
+          ),
         ],
       ),
       // )

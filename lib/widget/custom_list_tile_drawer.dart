@@ -6,11 +6,13 @@ class CustomListTileDrawer extends StatelessWidget {
   final IconData CustomLeading;
   final String CustomText;
   final IconData CustomTrailing;
+  final String MyRouteName;
 
   const CustomListTileDrawer({
     required this.CustomLeading,
     required this.CustomText,
     required this.CustomTrailing,
+    required this.MyRouteName,
     Key? key,
   }) : super(key: key);
 
@@ -25,7 +27,7 @@ class CustomListTileDrawer extends StatelessWidget {
       ),
       trailing: Icon(CustomTrailing),
       // ignore: avoid_print
-      onTap: () => print('clic sur un element'),
+      onTap: () => Navigator.of(context).pushReplacementNamed(MyRouteName),
     );
   }
 }
