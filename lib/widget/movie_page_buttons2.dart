@@ -26,7 +26,7 @@ class MoviePageButtons2 extends StatelessWidget {
           Text("       "),
           // ignore: prefer_const_constructors
           Icon(
-            Icons.favorite_border,
+            Icons.favorite,
             color: Colors.orange,
             size: 30,
           ),
@@ -36,6 +36,21 @@ class MoviePageButtons2 extends StatelessWidget {
             color: Colors.orange,
             size: 30,
           ),
+          const Text("               "),
+          // ignore: prefer_const_constructors
+          const Icon(
+            Icons.circle,
+            color: Colors.orange,
+            size: 7,
+          ),
+          const Text("2021"),
+          // ignore: prefer_const_constructors
+          const Icon(
+            Icons.circle,
+            color: Colors.orange,
+            size: 7,
+          ),
+          const Text("1h15min"),
         ],
       ),
     );

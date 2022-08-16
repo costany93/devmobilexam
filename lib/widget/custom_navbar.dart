@@ -73,10 +73,19 @@ class CustomNavBar extends StatelessWidget {
             onTap: () {
               Navigator.pushNamed(context, "/Youtube");
             },
-            child: const Icon(
-              Icons.youtube_searched_for,
-              size: 25,
-              color: Colors.black54,
+            child: Column(
+              // ignore: prefer_const_literals_to_create_immutables
+              children: [
+                const Icon(
+                  Icons.youtube_searched_for,
+                  size: 25,
+                  color: Colors.black54,
+                ),
+                const Text(
+                  'Youtube',
+                  style: TextStyle(fontSize: 10),
+                ),
+              ],
             ),
           ),
           InkWell(

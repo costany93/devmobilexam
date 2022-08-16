@@ -1,30 +1,22 @@
-// ignore_for_file: unrelated_type_equality_checks
-
-//import '../providers/movie.dart';
-//import '../providers/movie_data.dart';
-//import '../providers/vod_latest_added_data.dart';
-//import '../providers/vod_latest_added_title.dart';
 import '../widget/custom_navbar.dart';
 import '../widget/movie_page_buttons.dart';
 import '../widget/related_movies_widget.dart';
-//import '../widget/movie_item.dart';
 import 'package:flutter/material.dart';
 
 class MovieLaunchPage extends StatelessWidget {
   const MovieLaunchPage({Key? key}) : super(key: key);
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
           Image.asset(
-            "assets/images/latestadded0.jpeg",
+            'assets/images/latestadded0.jpeg',
             height: 200,
             width: double.infinity,
             fit: BoxFit.cover,
-          ),
-          //  ),
+          ),   
           SingleChildScrollView(
             child: SafeArea(
               child: Column(
@@ -103,10 +95,11 @@ class MovieLaunchPage extends StatelessWidget {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
       bottomNavigationBar: const CustomNavBar(),
     );
   }
 }
+

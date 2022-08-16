@@ -1,11 +1,9 @@
 import '../providers/home_latest_tv_series_data.dart';
 import '../widget/custom_navbar.dart';
-//import '../widget/item_title.dart';
 import '../widget/movie_item.dart';
 import '../widget/my_drawer.dart';
 //import 'package:flutter/src/foundation/key.dart';
 //import 'package:flutter/src/widgets/framework.dart';
-
 import 'package:flutter/material.dart';
 import '../providers/movie_data.dart';
 
@@ -34,7 +32,6 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                //width: double.infinity,
                 height: mediaQuery.size.height * 0.5,
                 child: Column(
                   children: [
@@ -56,7 +53,6 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                //width: double.infinity,
                 height: mediaQuery.size.height * 0.5,
                 child: Column(
                   children: [

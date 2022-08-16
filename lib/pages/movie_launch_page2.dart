@@ -5,23 +5,18 @@ import 'package:flutter/material.dart';
 
 class MovieLaunchPage2 extends StatelessWidget {
   const MovieLaunchPage2({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
-          //   Opacity(
-          // opacity: 0.1,
-          //for (var i = 0; i < 6; i++)
-          //if (i == 0)
           Image.asset(
             "assets/images/mostpopular1.jpeg",
             height: 200,
             width: double.infinity,
             fit: BoxFit.cover,
           ),
-          //  ),
+          
           SingleChildScrollView(
             child: SafeArea(
               child: Column(
@@ -83,7 +78,7 @@ class MovieLaunchPage2 extends StatelessWidget {
                       ],
                     ),
                   ),
-                  //const SizedBox(height: 4),
+                  
                   const MoviePageButtons2(), //call of MoviePageButtons from widget
                   const SizedBox(height: 10),
                   const Text(
@@ -100,7 +95,7 @@ class MovieLaunchPage2 extends StatelessWidget {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
       bottomNavigationBar: const CustomNavBar(),

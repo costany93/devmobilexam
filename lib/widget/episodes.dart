@@ -13,8 +13,6 @@ class Episodes extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
             child: Row(
-              //crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               // ignore: prefer_const_literals_to_create_immutables
               children: [
                 const Text(
@@ -26,19 +24,23 @@ class Episodes extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 80,
-                  height: 25,
-                  decoration: BoxDecoration(
-                      //color: Colors.white,
-                      borderRadius: BorderRadius.circular(2),
-                      // ignore: prefer_const_literals_to_create_immutables
-                      boxShadow: [
-                        const BoxShadow(
-                          color: Colors.white54,
-                          spreadRadius: 1,
-                          blurRadius: 1,
-                        ),
-                      ]),
+                  width: 350,
+                  height: 20,
+                 // decoration: BoxDecoration(
+                  // border: Border.all() ),
+                  child: const Text(
+                    "                                                                           Season 02",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                const Icon(
+                  Icons.arrow_drop_down,
+                  color: Colors.black,
+                  size: 25,
                 ),
               ],
             ),
@@ -51,7 +53,6 @@ class Episodes extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: Row(
-                      // crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(10),
@@ -64,7 +65,6 @@ class Episodes extends StatelessWidget {
                         ),
                         const Text("  "),
                         Container(
-                          //padding: EdgeInsets.only(left: 5),
                           width: 300,
                           height: 65,
                           decoration: BoxDecoration(
@@ -120,6 +120,11 @@ class Episodes extends StatelessWidget {
                             size: 15,
                           ),
                         ),
+                        const Icon(
+                          Icons.play_arrow,
+                          color: Colors.black,
+                          size: 15,
+                        ),
                       ],
                     ),
                   )
@@ -129,48 +134,5 @@ class Episodes extends StatelessWidget {
         ],
       ),
     );
-    // )
-    /* return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              const SizedBox(height: 15),
-              const Text(
-                'Episodes',
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                ),
-                textAlign: TextAlign.left,
-              ),
-              
-              const SizedBox(height: 20),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(children: [
-                  for (int i = 1; i < 6; i++)
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(2),
-                        child: Image.asset(
-                          "assets/images/latesttv$i.jpeg",
-                          height: 100,
-                          width: 50,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    )
-                ]),
-              )
-            ],
-          ),
-        ),
-      ],
-    );*/
   }
 }

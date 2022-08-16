@@ -1,26 +1,28 @@
 import 'package:flutter/material.dart';
 
-class VodLatestAddedItem extends StatelessWidget {
+// ignore: use_key_in_widget_constructors
+class VodReligionItem extends StatelessWidget {
   // ignore: use_key_in_widget_constructors
-  const VodLatestAddedItem(
+  const VodReligionItem(
       {required this.id, required this.image, required this.title});
   final String id;
-  final String image;
   final String title;
+  final String image;
 
   @override
   Widget build(BuildContext context) {
     MediaQueryData mediaQuery = MediaQuery.of(context);
     return InkWell(
-      onTap: () => (Navigator.pushNamed(context, "/VOD/movieLaunch")),
+      // ignore: avoid_print
+      onTap: () => print(''),
       // ignore: avoid_unnecessary_containers
       child: Container(
         child: Column(
           children: [
             Container(
-                width: mediaQuery.size.width * 0.16,
-                height: mediaQuery.size.height * 0.14,
-                margin: const EdgeInsets.symmetric(horizontal: 2),
+                width: mediaQuery.size.width * 0.15,
+                height: mediaQuery.size.height * 0.16,
+                margin: const EdgeInsets.symmetric(horizontal: 3),
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: ExactAssetImage(image),

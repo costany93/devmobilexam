@@ -32,17 +32,34 @@ class MoviePageButtons extends StatelessWidget {
           // ignore: prefer_const_constructors
           Container(
             child: const Icon(
-              Icons.favorite_border,
+              Icons.favorite,
               color: Colors.orange,
               size: 30,
             ),
           ),
           const Text("    "),
-          const Icon(
-            Icons.share,
-            color: Colors.orange,
-            size: 30,
+          Container(
+            child: const Icon(
+              Icons.share,
+              color: Colors.orange,
+              size: 30,
+            ),
           ),
+          const Text("          "),
+          // ignore: prefer_const_constructors
+          const Icon(
+            Icons.circle,
+            color: Colors.orange,
+            size: 7,
+          ),
+          const Text("2021"),
+          // ignore: prefer_const_constructors
+          const Icon(
+            Icons.circle,
+            color: Colors.orange,
+            size: 7,
+          ),
+          const Text("1h15min"),
         ],
       ),
     );

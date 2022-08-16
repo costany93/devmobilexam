@@ -26,7 +26,8 @@ class ReplayAlertDialog extends StatelessWidget {
                     image: ExactAssetImage(imageAsset),
                     fit: BoxFit.fitHeight,
                   ),
-                )),
+                )
+                ),
           ),
           Container(
             color: Colors.black,

@@ -1,7 +1,5 @@
 import 'package:devmobilexam/providers/movie_my_list_data.dart';
-
 import '../widget/youtube_movie_widget.dart';
-
 import '../widget/custom_navbar.dart';
 import '../widget/my_drawer.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +64,6 @@ class YoutubePage extends StatelessWidget {
           ],
         ),
       ),
-      // )
     );
   }
 }

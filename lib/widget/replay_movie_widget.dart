@@ -6,7 +6,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 
 class ReplayMovieWidget extends StatelessWidget {
-  ReplayMovieWidget(
+  // ignore: use_key_in_widget_constructors
+  const ReplayMovieWidget(
       {required this.id, required this.imageAsset, required this.title});
   final String id;
   final String imageAsset;
@@ -58,26 +59,6 @@ class ReplayMovieWidget extends StatelessWidget {
                           ),
                         ),
                       ),
-                      /* Container(
-                        margin: const EdgeInsets.only(
-                          top: 40,
-                          left: 0.2,
-                        ),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(40),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.orange.withOpacity(0.5),
-                              spreadRadius: 3,
-                            ),
-                          ],
-                        ),
-                        child: const Icon(
-                          Icons.play_arrow,
-                          color: Colors.white,
-                          size: 15,
-                        ),
-                      ), */
                       Container(
                         padding:
                             EdgeInsets.only(left: constraints.maxWidth * 0.03),
