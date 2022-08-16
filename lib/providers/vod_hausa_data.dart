@@ -5,7 +5,7 @@ import 'package:devmobilexam/providers/vod_hausa.dart';
 final HAUSA_DATA = [
   VodHausa(
     id: '1',
-    title: ' ',
+    title: '',
     cover: 'assets/images/hausa1.jpeg',
     ismovie: true,
     hausa: true,

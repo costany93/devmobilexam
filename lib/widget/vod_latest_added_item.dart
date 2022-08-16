@@ -1,3 +1,4 @@
+import 'package:devmobilexam/pages/movie_launch_page.dart';
 import 'package:flutter/material.dart';
 
 class VodLatestAddedItem extends StatelessWidget {
@@ -12,7 +13,8 @@ class VodLatestAddedItem extends StatelessWidget {
   Widget build(BuildContext context) {
     MediaQueryData mediaQuery = MediaQuery.of(context);
     return InkWell(
-      onTap: () => (Navigator.pushNamed(context, "/VOD/movieLaunch")),
+      onTap: () => Navigator.of(context).pushNamed(MovieLaunchPage.routeName,
+          arguments: {'id': id, 'title': title, 'image': image}),
       // ignore: avoid_unnecessary_containers
       child: Container(
         child: Column(

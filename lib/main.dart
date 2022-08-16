@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         "/Replay": (context) => const ReplayPage(),
         "/Youtube": (context) => const YoutubePage(),
         "/MyList": (context) => const MyListPage(),
-        "/VOD/movieLaunch": (context) => const MovieLaunchPage(),
+        MovieLaunchPage.routeName: (context) => MovieLaunchPage(),
         "/VOD/movieLaunch2": (context) => const MovieLaunchPage2(),
       },
     );

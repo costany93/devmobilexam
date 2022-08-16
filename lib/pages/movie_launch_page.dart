@@ -4,19 +4,25 @@ import '../widget/related_movies_widget.dart';
 import 'package:flutter/material.dart';
 
 class MovieLaunchPage extends StatelessWidget {
-  const MovieLaunchPage({Key? key}) : super(key: key);
-  
+  static const routeName = "/gaskia-vod";
+
+  MovieLaunchPage();
+
   @override
   Widget build(BuildContext context) {
+    final arguments = (ModalRoute.of(context)?.settings.arguments ??
+        <String, dynamic>{}) as Map;
+    print('here is arguments');
+    print(arguments['image']);
     return Scaffold(
       body: Stack(
         children: [
           Image.asset(
-            'assets/images/latestadded0.jpeg',
+            arguments['image'],
             height: 200,
             width: double.infinity,
             fit: BoxFit.cover,
-          ),   
+          ),
           SingleChildScrollView(
             child: SafeArea(
               child: Column(
@@ -66,9 +72,9 @@ class MovieLaunchPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       // ignore: prefer_const_literals_to_create_immutables
                       children: [
-                        const Text(
-                          "La meute",
-                          style: TextStyle(
+                        Text(
+                          arguments['title'],
+                          style: const TextStyle(
                             color: Colors.black,
                             fontSize: 25,
                             fontWeight: FontWeight.bold,
@@ -102,4 +108,3 @@ class MovieLaunchPage extends StatelessWidget {
     );
   }
 }
-
